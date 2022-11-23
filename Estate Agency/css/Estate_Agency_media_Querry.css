@@ -1,0 +1,112 @@
+
+@media(max-width: 1100px)
+{
+	.about_content1{height: 400px; width: 700px;}
+	.about_content1 .name{height: 180px;width: 340px;top: 45%;}
+	.about_content1 .name h1{font-size: 30px;}
+}
+	
+@media(max-width: 1000px)
+{  .nav{height: 200px;}
+	.nav .logo{width: 50%; position: absolute; text-align: center;}
+	.nav .menubar{width: 100%; position: absolute;top: 100px;}
+	.nav .menubar .dropdown{margin: 30px;}
+	.nav .search{width: 50%; position: absolute;right: 0;text-align: center; }
+	.content1{margin-top: 200px;}
+	.content1 .details{width: 400px;}
+	.content2{flex-wrap: wrap;}
+	.content2 .c1{width: 60%; margin-left: 120px;}
+	.content2 .c2{width: 60%; margin-left: 120px;}
+	.content2 .c3{width: 60%; margin-left: 120px; margin-right: 0;}
+	.content3{flex-wrap: wrap;}
+	.content3 .c1{width: 90%;margin: 20px auto;}
+	.content4 .content4-1{flex-wrap: wrap;}
+	.content4 .content4-1 .c1{margin-top:10px ;}
+	.content4 .content4-1 .c1 .c1-2{width: 100%;}
+	.content4 .content4-1 .c1 .c1-2 .phone,.email{left:0; right: 0;}
+	.content4 .content4-1 .c1{width: 100%; text-align: center;}
+	.content4 .content4-1 .c1 .c1-2 .icon{left: 0;right: 0;}
+	.content6 .c1 .c1-1{background-size: 70% 70%;}
+	.content6 .c1 .c1-2{height: 300px;width: 70%;}
+	.content6 .c1 .c1-2 .info .fa-caret-down{bottom: -15%;}
+	.fotter .p1 .p1-1 .part{width: 100%;text-align: center; height: auto;}
+	.fotter .p1 .p1-1 .part .info{width: 100%;}
+	.about_heading .h1-1{width: 100%;line-height: 50px;}
+	.about_heading .h1-2{width: 100%;margin: 0;height: auto;padding:0;padding-left: 40px;}
+	.about_heading .h1-1 h1{width: 100%;}
+	.about_heading{margin-top: 200px;}
+	.about_content3{flex-wrap: wrap;}
+	.about_content3 .p1{width: 60%;margin:20px auto;}
+	.meet{text-align: center;padding-top: 70px;}
+	.all{width: 77%;text-align: left;margin-top: 20px;}
+	.about_heading .h1 .cu{line-height: 20px;padding-top: 20px;}
+	.about_heading .h1 .cu .aut{margin-top: 20px;width: 100%;}
+	
+}
+@media(max-width: 900px)
+{
+    .about_content1{height: 300px; width: 600px;}
+	.about_content1 .name{height: 150px;width: 250px;top: 35%;padding: 35px;}
+	.about_content1 .name h1{font-size: 25px;}
+	.map{height: 400px;}
+}
+
+
+@media(max-width: 750px)
+{   .nav{height: 200px;}
+	.nav .logo{width: 50%; position: absolute; text-align: center;}
+	.nav .menubar{width: 100%; position: absolute;top: 100px;}
+	.nav .menubar .dropdown{margin: 8px;}
+	.nav .search{width: 50%; position: absolute;right: 0;text-align: center; }
+	.heading .h1{padding-left: 25px;}
+	.heading .h2{font-size: 20px;}
+	.hh1{padding-left:100px;}
+	.heading1-2 .h1-1{width: 100%;padding-left: 110px;text-align: center;height: 100px;}
+	.heading1-2 .h2-1{width: 100%;text-align: center;height: 30px;padding: 0;}
+	.content5{flex-wrap: wrap;}
+	.content5 .c1{width: 100%; margin: auto; width: 60%;}
+	.content5 .c1{margin-top: 20px;}
+    .content6 .c1 {width: 100%;}
+    .content6 .c1 .c1-1{background-size: 100% 100%; width: 100%;margin: auto;}
+	.content6 .c1 .c1-2{height: 400px;width: 100%; margin: auto;}
+	.content6 .c1 .c1-2 .info .fa-caret-down{bottom: -30%;}
+	.about_heading .h1-1 h1{font-size: 2rem;}
+	.about_content2 .p1{width: 100%; height: auto;}
+	.about_content2 .p1 .p1-1{width: 100%;}
+	.about_content2 .p1 .p1-2{width: 100%;margin: 0;text-align: center;margin-top: 40px;height: auto;}
+	.about_content2 .p1 .p1-2 h1{width: 100%;}
+	.about_content2 .p1 .p1-2 p{width: 100%;}
+	.all{width: 70%;}
+	.swap{text-align: center;}
+	.map{height: 300px;}
+	.form{flex-wrap: wrap;}
+	.form .f1{width: 100%;}
+	.form .f2{width: 100%;margin-top: 100px;margin-left: 0;}
+
+
+
+	
+	
+	
+}
+
+@media(max-width:700px)
+{
+    .content6 .c1 .c1-2 .info .fa-caret-down{bottom: -30px;}	
+    .fotter .p1 .p1-1 .part{width: 100%;text-align: center; height: auto;}
+	.fotter .p1 .p1-1 .part .info{width: 100%;}
+	.about_content1{height: 250px; width: 400px;}
+	.about_content1 .name{height: 130px;width: 200px;top: 30%; padding: 30px;}
+	.about_content1 .name h1{font-size: 20px; width: 100%; padding: 0;}
+
+    
+}
+
+@media(max-width: 550px)	
+{   
+	.content1 .details{width: 350px;}
+	.content1 .details .name{font-size: 50px;}
+	.content6 .c1 .c1-2 .info .fa-caret-down{bottom: -30px;}
+}
+
+

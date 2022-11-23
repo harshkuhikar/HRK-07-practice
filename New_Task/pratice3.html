@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * 
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            height: 400px;
+            width: 600px;
+            margin:150px auto;
+            position: relative;
+            overflow: hidden;
+            background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg);
+            background-size: 100% 100%;
+            
+        }
+        .main::before{
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: black;
+            position: absolute;
+            top: -100%;
+            left: 100%;
+            opacity: 0.1;
+            transition: 1s;
+        }
+        .main::after{
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: black;
+            position: absolute;
+            top: 100%;
+            left: -100%;
+            opacity: 0.1;
+            transition: 1s;
+        }
+      
+        .main:hover::after{
+            top: 0;
+            left: 0;
+        }
+        .main:hover::before{
+            top: 0;
+            left: 0;
+        }
+        .main .m1{
+            height: 400px;
+            width: 600px;
+            position: absolute;
+            top: 0;
+            left: 0;
+         background: black;
+         opacity: 0.1;   
+         transition: 1s;
+        }
+        .main .a{
+            top: -100%;
+            left: -100%;
+        }
+        .main .b{
+            top: 100%;
+            left: 100%;
+        }
+        .main .c{
+            top: -100%;
+            left: 0;
+        }
+        .main .d{
+            top: 100%;
+            left: 0;
+        }
+        .main .e{
+            top: 0%;
+            left: 100%;
+        }
+        .main .f{
+            top: 0%;
+            left: -100%;
+        }
+        .main:hover .a, .main:hover .b,.main:hover .c,.main:hover .d,.main:hover .e,.main:hover .f{
+            top: 0;
+            left: 0;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg"
+            alt="" height="100%" width="100%"> -->
+       <div class="m1 a"></div>
+       <div class="m1 b"></div>
+       <div class="m1 c"></div>
+       <div class="m1 d"></div>
+       <div class="m1 e"></div>
+       <div class="m1 f"></div> 
+       
+    </div>
+</body>
+
+</html>

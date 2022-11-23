@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		* {box-sizing: border-box;margin: 0;padding: 0}
+		.music_card
+		{
+			height: 610px;
+			width: 900px;
+			background: lightblue;
+			margin: 20px auto;
+			padding: 40px;
+			display: flex;
+
+		}
+		.music_card .card1
+		{
+			height: 550px;
+			width: 350px;
+			background: linear-gradient(#a2a8a7,blue);
+			border-radius: 10%;
+			padding: 20px;
+			margin-right: 100px;
+			position: relative;
+
+		}
+		.music_card .card1 .arrow
+		{
+			height: 40px;
+			width: 40px;
+			background: linear-gradient(#a2a8a7,blue);
+			box-shadow: 0 0 5px black;
+			border-radius: 50%;
+			position: relative;
+
+
+			
+		}
+		.fa-arrow-left
+		{
+			font-size: 20px;
+			position: absolute;
+			top: 20%;
+			left: 18%;
+		}
+
+		.music_card .card1 .arrow p
+		{
+			height: 20px;
+			width: 120px;
+/*			background: blue;*/
+			position: absolute;
+			top: 10px;
+			left: 100px	;
+
+		}
+
+		.music_card .card1 .arrow1
+		{
+			height: 40px;
+			width: 40px;
+			background: linear-gradient(#a2a8a7,blue);
+			box-shadow: 0 0 5px black;
+			border-radius: 50%;
+			margin: -40px 0 0 270px;
+			position: relative;
+
+
+		}
+		.arrow1 .fa-bars
+		{
+			font-size: 20px;
+			position: absolute;
+			top: 25%;
+			left: 25%;
+		}
+		.music_card .card1 .round 
+		{
+			height: 200px;
+			width: 200px;
+			background: url(https://seedsnpots.com/wp-content/uploads/2017/12/219951015_336414111461937_3618372671505822777_n.jpg);
+			background-size: 100% 100%;
+			border-radius: 50%;
+			margin: 10px 0 0 50px;
+			border: 8px solid silver;
+			box-shadow: 10px 20px 25px black;
+		}
+
+		.music_card .card1 h2
+		{
+			margin: 30px 0 0 110px;
+
+		}
+		.music_card .card1 h5
+		{
+			margin: 0 0 0 90px;
+			
+		}
+		.music_card .card1 h6
+		{
+			margin: 20px 0 0 0;
+		}
+		.music_card .card1 .h6
+		{
+			margin: -15px 0 0 290px;
+		}
+		.music_card .card1 .music_line
+		{
+			height: 7px;
+			width: 100%;
+			background: white;
+			border-radius: 10px;
+			margin: 10px 0;
+			display: flex;
+		}
+		.music_card .card1 .music_line1
+		{
+			height: 7px;
+			width: 70%;
+			background: red;
+			position: relative;
+		}
+		.music_card .card1 .music_line1 .fa-record-vinyl
+		{
+			color: yellow;
+			font-size: 15px	;
+			position: absolute;
+			top: -29%;
+			left: 95%;
+		}
+
+		.music_card .card1 .play 
+		{
+			height: 100px;
+			width: 100%;
+/*			background: red;*/
+			display: flex;
+
+		}
+		.music_card .card1 .play .left
+		{
+			height: 50px;
+			width: 50px;
+			background: linear-gradient(grey,silver);
+			box-shadow: 0 0 5px black;
+			border-radius: 50%;
+			margin: 20px 0;
+		
+		}
+
+		.music_card .card1 .play .left .fa-caret-left
+		{
+			margin: 10px 0 0 2px;
+			font-size: 30px;
+		}
+
+		.music_card .card1 .play .mid
+		{
+			height: 50px;
+			width: 50px;
+			background: linear-gradient(grey,silver);
+			box-shadow: 0 0 5px black;
+			border-radius: 50%;
+			margin:20px 0 0 80px; 
+		}
+		.music_card .card1 .play .mid .fa-pause
+		{
+			font-size: 25px;
+			margin: 12px 0 0 17px ;
+		}
+
+		.music_card .card1 .play .right
+		{
+			height: 50px;
+			width: 50px;
+			background: linear-gradient(grey,silver);
+			box-shadow: 0 0 5px black;
+			border-radius: 50%;
+			margin:20px 0 0 80px; 
+		}
+		.music_card .card1 .play .right .fa-caret-right
+		{
+			font-size: 30px;
+			margin: 10px 0px 0 5px;
+		}
+
+
+
+
+/*		card 2*/
+
+
+		.music_card .card2
+		{
+			height: 550px;
+			width: 350px;
+			background: linear-gradient(#a2a8a7,blue);
+			border-radius: 10%;
+			padding: 20px;
+			margin-top: 20px;
+			position: relative;
+
+		}
+
+		.music_card .card2 P 
+		{
+			font-size: 15px;
+			color:#000;
+			margin: 10px 0 0 100px;
+		}
+
+		.music_card .card2 .icon
+		{
+			height: 100px;
+			width: 100%;
+/*			background: red;*/
+			margin-top: 10px;
+			position: relative;
+		}
+
+		.music_card .card2 .icon .heart
+		{
+			height: 40px;
+			width: 40px;
+			background: linear-gradient(#a2a8a7,blue);
+			box-shadow: 0 0 5px black;
+			border-radius: 50%;
+			position: absolute;
+			top:30px;
+			left:0px;
+
+		}
+		.music_card .card2 .icon .heart .fa-heart
+		{
+			position: absolute;
+			top: 12px;
+			left: 11px;
+		}
+		.music_card .card2 .icon .img 
+		{
+			height: 100px;
+			width: 100px;
+		   background: url(https://seedsnpots.com/wp-content/uploads/2017/12/219951015_336414111461937_3618372671505822777_n.jpg);
+		   background-size: 100% 100%;
+		   border-radius: 50%;
+		   margin: 0 0 0 100px;
+		   border: 4px solid silver;
+		   box-shadow: 10px 20px 25px black;
+		}
+		.music_card .card2 .icon .dotted
+		{
+			height: 40px;
+			width: 40px;
+			background: linear-gradient(#a2a8a7,blue);
+			box-shadow: 0 0 5px black;
+			border-radius: 50%;
+			position: absolute;
+			top: 30px;
+			left: 270px;
+		}
+		.music_card .card2 .icon .dotted .fa-circle
+		{
+			font-size: 5px;
+			margin: 17px 0 0 4px;
+		}
+
+		.card2 .name
+		{
+			height: 350px;
+			width: 100%;
+/*			background: red;*/
+			margin: 20px 0 0 0;
+		}
+		.card2 .name .s_name
+		{
+			height: 50px;
+			width: 100%;
+/*			background: rgba(0, 0, 0, 0.3);*/
+/*			border:2px solid;*/
+		}
+		.s_name:hover
+		{
+			height: 40px;
+			width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+/*            margin: 5px;*/
+
+		}
+		
+
+		.card2 .name .s_name p
+		{
+			margin: 0 10px 0 0;
+			font-size: 10px;
+		}
+
+		.card2 .name .s_name .fa-circle-play
+		{
+			margin: -20px 0 0 250px;
+			color: linear-gradient(#a2a8a7,blue) ;
+			font-size: 30px;
+		
+
+		}
+
+	</style>
+</head>
+<body>
+<div class="music_card">
+	<div class="card1">
+		<div class="arrow">
+			<i class="fa-solid fa-arrow-left"></i>
+		    <p>PLAYING NOW</p>
+		</div>
+		<div class="arrow1">
+				<i class="fa-solid fa-bars"></i>
+		</div>
+		<div class="round"></div>
+		<h2>Lose it</h2>
+		<h5>flume ft. vic mensa</h5>
+		<h6>1.21</h6>
+		<h6 class="h6">3.46</h6>
+		<div class="music_line">
+			<div class="music_line1">
+				<i class="fa-solid fa-record-vinyl"></i>
+			</div>
+		</div>
+		<div class="play">
+			<div class="left">
+				<i class="fa-solid fa-caret-left"></i>
+				<i class="fa-solid fa-caret-left"></i>
+			</div>
+			<div class="mid">
+				<i class="fa-solid fa-pause"></i>
+			</div>
+			<div class="right">
+				<i class="fa-solid fa-caret-right"></i>
+				<i class="fa-solid fa-caret-right"></i>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="card2">
+		<p>SKIN-FLUME</p>
+		<div class="icon">
+			<div class="heart">
+				<i class="fa-solid fa-heart"></i>
+			</div>
+			<div class="img">
+				
+			</div>
+			<div class="dotted">
+				<i class="fa-sharp fa-solid fa-circle"></i>
+				<i class="fa-sharp fa-solid fa-circle"></i>
+				<i class="fa-sharp fa-solid fa-circle"></i>
+				
+			</div>
+		</div>
+
+		<div class="name">
+			<div class="s_name">
+				<h5>WAKANDA</h5>
+				<p>FLUME</p>
+				<i class="fa-sharp fa-solid fa-circle-play"></i>
+			
+			
+			</div>
+			<div class="s_name">
+				<h5>KESARIYA</h5>
+				<p>FLUME</p>
+				<i class="fa-sharp fa-solid fa-circle-play"></i>
+			</div>
+		
+			<div class="s_name">
+				<h5>ONE DANCE</h5>
+				<p>FLUME</p>
+				<i class="fa-sharp fa-solid fa-circle-play"></i>
+			</div>
+			<div class="s_name">
+				<h5>DAKU</h5>
+				<p>FLUME</p>
+				<i class="fa-sharp fa-solid fa-circle-play"></i>
+			</div>
+			<div class="s_name">
+				<h5>SHONEYA</h5>
+				<p>FLUME</p>
+				<i class="fa-sharp fa-solid fa-circle-play"></i>
+			</div>
+			<div class="s_name">
+				<h5>DEVA DEVA</h5>
+				<p>FLUME</p>
+				<i class="fa-sharp fa-solid fa-circle-play"></i>
+			</div>
+			<div class="s_name">
+				<h5>LET ME DOWN SLOWLY</h5>
+				<p>FLUME</p>
+				<i class="fa-sharp fa-solid fa-circle-play"></i>
+			</div>
+		
+			</div>
+		
+	</div>
+</div>
+</body>
+</html>
